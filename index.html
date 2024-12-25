@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d9534f; /* Red color for messages */
+            display: none; /* Hidden by default */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Slot Machine Simulator</h1>
+        <div class="reels">
+            <div class="reel" id="reel1"></div>
+            <div class="reel" id="reel2"></div>
+            <div class="reel" id="reel3"></div>
+        </div>
+        <button id="spinBtn">Spin</button>
+        <button id="resetBtn">Reset</button>
+        <div class="score">
+            <p>Points: <span id="points">0</span></p>
+            <p>High Score: <span id="highScore">0</span></p>
+        </div>
+        <div class="theme">
+            <label for="themeSelect">Select Theme:</label>
+            <select id="themeSelect">
+                <option value="default">Default</option>
+                <option value="fruit">Fruit</option>
+                <option value="numbers">Numbers</option>
+            </select>
+        </div>
+        <div id="message"></div> <!-- New element for messages -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
